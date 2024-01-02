@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#365486",
-        secondary: "#7FC7D9",
-        bg: "#0F1035",
-        sky: "#DCF2F1",
+        bg: "#0B2447",
+        primary: "#19376D",
+        secondary: "#576CBC",
+        tartiary: "#A5D7E8",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
