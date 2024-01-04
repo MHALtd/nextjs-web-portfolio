@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section className="grid grid-cols-1 lg:grid-cols-12 my-4">
       <div className="col-span-7 place-self-center place-items-center grid lg:place-items-start">
         <h1 className="text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold">
-          <span className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-primary to-secondary">
+          <span className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-secondary to-tartiary">
             Hello, I'm{" "}
           </span>{" "}
           <br></br>
