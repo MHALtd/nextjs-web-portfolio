@@ -38,10 +38,10 @@ const projectsData = [
   {
     id: 5,
     title: "Wedding Organization Page",
-    description: "Wedding Organization Website using and Bootstrap",
+    description: "Wedding Org Website using and Bootstrap",
     image: "/images/projects/1.png",
     gitUrl: "https://github.com/MHALtd/wedding-org-bootstrap.git",
-    previewUrl: "https://hasbiportfolio.netlify.app/",
+    previewUrl: "https://arjunaasmaralaya.netlify.app/",
   },
 ];
 

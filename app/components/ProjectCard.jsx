@@ -12,7 +12,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         width={300}
         height={200}
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}>
-        <div className="overlay absolute top-0 left-0 w-full h-full bg-secondary bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 items-center justify-center">
+        <div className="overlay absolute top-0 left-0 w-full h-full bg-primary bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 items-center justify-center">
           <Link
             href={gitUrl}
             target="_blank"
@@ -27,9 +27,9 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           </Link>
         </div>
       </div>
-      <div className="text-tartiary rounded-b-xl bg-primary py-6 px-4">
+      <div className="text-white rounded-b-xl bg-primary py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-secondary">{description}</p>
+        <p className="text-tartiary">{description}</p>
       </div>
     </div>
   );

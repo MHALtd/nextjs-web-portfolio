@@ -29,9 +29,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed mx-auto border-b-2 border-opacity-40 border-tartiary top-0 left-0 right-0 z-10 bg-bg bg-opacity-100">
-      <div className="flex flex-wrap items-center justify-between mx-auto p-5">
+      <div className="flex container flex-wrap items-center justify-between mx-auto p-5">
         <Link href={"/"} className="text-tartiary text-2xl md:text-4xl font-semibold">
-          LOGO
+          MHALtd
         </Link>
         <div className="block md:hidden">
           {!navbarOpen ? (
