@@ -1,6 +1,7 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import ProjectCard from "./ProjectCard";
-
+import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
@@ -34,23 +35,46 @@ const projectsData = [
     gitUrl: "https://github.com/MHALtd/bootstrap-profile.git",
     previewUrl: "https://hasbiportfolio.netlify.app/",
   },
+  {
+    id: 5,
+    title: "Wedding Organization Page",
+    description: "Wedding Organization Website using and Bootstrap",
+    image: "/images/projects/1.png",
+    gitUrl: "https://github.com/MHALtd/wedding-org-bootstrap.git",
+    previewUrl: "https://hasbiportfolio.netlify.app/",
+  },
 ];
 
 const ProjectsSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
   return (
-    <section>
+    <section id="projects" className="pt-20">
       <h2 className="text-center text-4xl font-bold text-tartiary mt-4 mb-8 md:mb-12">My Projects</h2>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {projectsData.map((project) => (
-          <ProjectCard
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            imgUrl={project.image}
-            gitUrl={project.gitUrl}
-            previewUrl={project.previewUrl}></ProjectCard>
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+        {projectsData.map((project, index) => (
+          <motion.li
+            key={index}
+            variants={cardVariants}
+            initial="initial"
+            animate={isInView ? "animate" : "initial"}
+            transition={{ duration: 0.3, delay: index * 0.4 }}>
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              imgUrl={project.image}
+              gitUrl={project.gitUrl}
+              previewUrl={project.previewUrl}></ProjectCard>
+          </motion.li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

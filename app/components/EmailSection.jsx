@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import GithubIcon from "../../public/github-icon.svg";
 import LinkedinIcon from "../../public/linkedin-icon.svg";
 import Link from "next/link";
@@ -40,71 +40,73 @@ const EmailSection = () => {
   };
 
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
-      <div>
-        <h5 className="text-xl font-bold text-tartiary my-2">Let's Connect</h5>
-        <p className="text-secondary mb-4 max-w-md">
-          {" "}
-          I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to
-          say hi, I'll try my best to get back to you!
-        </p>
-        <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/MHALtd" target="_blank">
-            <Image src={GithubIcon} alt="Github Icon"></Image>
-          </Link>
-          <Link href="https://www.linkedin.com/in/muhammad-hasbi-abdillah-b90a6b235/" target="_blank">
-            <Image src={LinkedinIcon} alt="Linkedin Icon"></Image>
-          </Link>
+    <section id="contact">
+      <div className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
+        <div>
+          <h5 className="text-xl font-bold text-tartiary my-2">Let's Connect</h5>
+          <p className="text-tartiary mb-4 max-w-md">
+            {" "}
+            I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to
+            say hi, I'll try my best to get back to you!
+          </p>
+          <div className="socials flex flex-row gap-2">
+            <Link href="https://github.com/MHALtd" target="_blank">
+              <Image src={GithubIcon} alt="Github Icon"></Image>
+            </Link>
+            <Link href="https://linkedin.com/in/muhammad-hasbi-abdillah-b90a6b235/" target="_blank">
+              <Image src={LinkedinIcon} alt="Linkedin Icon"></Image>
+            </Link>
+          </div>
         </div>
-      </div>
-      <div>
-        {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">Email sent successfully!</p>
-        ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
-            <div className="mb-6">
-              <label htmlFor="email" className="text-tartiary block mb-2 text-sm font-medium">
-                Your Email
-              </label>
-              <input
-                name="email"
-                type="email"
-                id="email"
-                required
-                className="bg-primary border border-tartiary placeholder-[#9CA2A9] text-tartiary text-sm rounded-lg block w-full p-2.5"
-                placeholder="john@google.com"
-              />
-            </div>
-            <div className="mb-6">
-              <label htmlFor="subject" className="text-tartiary block mb-2 text-sm font-medium">
-                Subject
-              </label>
-              <input
-                name="subject"
-                type="text"
-                id="subject"
-                required
-                className="bg-primary border border-tartiary placeholder-[#9CA2A9] text-tartiary text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
-              />
-            </div>
-            <div className="mb-6">
-              <label htmlFor="message" className="text-tartiary block mb-2 text-sm font-medium">
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                className="bg-primary border border-tartiary placeholder-[#9CA2A9] text-tartiary text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."></textarea>
-            </div>
-            <button
-              type="submit"
-              className="bg-primary hover:bg-secondary text-tartiary font-medium py-2.5 px-5 rounded-lg w-full">
-              Send Message
-            </button>
-          </form>
-        )}
+        <div>
+          {emailSubmitted ? (
+            <p className="text-green-500 text-sm mt-2">Email sent successfully!</p>
+          ) : (
+            <form className="flex flex-col" onSubmit={handleSubmit}>
+              <div className="mb-6">
+                <label htmlFor="email" className="text-tartiary block mb-2 text-sm font-medium">
+                  Your Email
+                </label>
+                <input
+                  name="email"
+                  type="email"
+                  id="email"
+                  required
+                  className="bg-primary border border-tartiary placeholder-[#9CA2A9] text-tartiary text-sm rounded-lg block w-full p-2.5"
+                  placeholder="john@google.com"
+                />
+              </div>
+              <div className="mb-6">
+                <label htmlFor="subject" className="text-tartiary block mb-2 text-sm font-medium">
+                  Subject
+                </label>
+                <input
+                  name="subject"
+                  type="text"
+                  id="subject"
+                  required
+                  className="bg-primary border border-tartiary placeholder-[#9CA2A9] text-tartiary text-sm rounded-lg block w-full p-2.5"
+                  placeholder="Just saying hi"
+                />
+              </div>
+              <div className="mb-6">
+                <label htmlFor="message" className="text-tartiary block mb-2 text-sm font-medium">
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  className="bg-primary border border-tartiary placeholder-[#9CA2A9] text-tartiary text-sm rounded-lg block w-full p-2.5"
+                  placeholder="Let's talk about..."></textarea>
+              </div>
+              <button
+                type="submit"
+                className="bg-secondary hover:bg-tartiary text-white hover:text-primary font-medium py-2.5 px-5 rounded-lg w-full">
+                Send Message
+              </button>
+            </form>
+          )}
+        </div>
       </div>
     </section>
   );
