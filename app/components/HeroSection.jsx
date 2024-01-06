@@ -48,7 +48,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
           className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="bg-primary lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] rounded-full relative">
+          <div className="bg-gradient-radial from-secondary to-primary lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] rounded-full relative">
             <Image
               src="/images/hero-profile.png"
               alt="hero image"

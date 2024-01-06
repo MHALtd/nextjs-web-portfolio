@@ -13,9 +13,9 @@ const TAB_DATA = [
         <li>React.js</li>
         <li>Vite.js</li>
         <li>Next.js</li>
+        <li>Tailwind</li>
+        <li>Bootstrap</li>
         <li>CodeIgniter4</li>
-        <li>TailwindCSS</li>
-        <li>BootstrapCSS</li>
       </ul>
     ),
   },
@@ -76,7 +76,7 @@ const AboutSection = () => {
         <Image src="/images/about-profile.jpeg" className="rounded-xl" width={500} height={500} alt="about profile"></Image>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-base md:text-lg">
+          <p className="text-base md:text-justify md:text-lg">
             I am a Frontend Developer with a passion for creating interactive and responsive web applications. Ihave
             experience working with JavaScript, React.js, Node.js, Next.js, HTML, CSS and Git. I am a creative and
             perfectionist person. Also I am always looking to expand my knowledge and skill set. I am excited to work with
