@@ -30,7 +30,7 @@ const projectsData = [
   {
     id: 4,
     title: "Simple Web Profile",
-    description: "Website Portfolio using and Bootstrap",
+    description: "Website Portfolio using Bootstrap",
     image: "/images/projects/4.png",
     gitUrl: "https://github.com/MHALtd/bootstrap-profile.git",
     previewUrl: "https://hasbiportfolio.netlify.app/",
@@ -38,7 +38,7 @@ const projectsData = [
   {
     id: 5,
     title: "Wedding Organization Page",
-    description: "Wedding Org Website using and Bootstrap",
+    description: "Wedding Org Website using Bootstrap",
     image: "/images/projects/5.png",
     gitUrl: "https://github.com/MHALtd/wedding-org-bootstrap.git",
     previewUrl: "https://arjunaasmaralaya.netlify.app/",

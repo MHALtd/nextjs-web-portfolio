@@ -23,7 +23,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
             href={previewUrl}
             target="_blank"
             className="h-14 w-14 border-2 relative rounded-full border-tartiary hover:border-white mr-4 group/link">
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></EyeIcon>
+            <EyeIcon className="h-10 w-10 text-tartiary group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></EyeIcon>
           </Link>
         </div>
       </div>

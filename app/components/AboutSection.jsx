@@ -73,14 +73,14 @@ const AboutSection = () => {
   return (
     <section id="about" className="pt-8 text-tartiary">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-profile.jpeg" className="rounded-xl" width={500} height={500} alt="about profile"></Image>
+        <Image src="/images/about-profile.jpg" className="rounded-xl" width={500} height={500} alt="about profile"></Image>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-base md:text-justify md:text-lg">
             I am a Frontend Developer with a passion for creating interactive and responsive web applications. Ihave
-            experience working with JavaScript, React.js, Node.js, Next.js, HTML, CSS and Git. I am a creative and
-            perfectionist person. Also I am always looking to expand my knowledge and skill set. I am excited to work with
-            others to amazing applications.
+            experience working with JavaScript, React.js, Node.js, HTML, CSS and Git. I am a creative and perfectionist
+            person. Also I am always looking to expand my knowledge and skill set. I am excited to work with others to
+            amazing applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
