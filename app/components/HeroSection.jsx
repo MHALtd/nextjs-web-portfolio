@@ -27,8 +27,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-tartiary text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur qui provident repellendus iusto saepe in
-            laborum amet quam atque dignissimos!
+            Hi, I&apos;m Muhammad Hasbi Abdillah. A passionate Frontend Developer based in Bekasi, Indonesia.
           </p>
           <div>
             <Link
