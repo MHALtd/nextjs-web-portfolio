@@ -22,10 +22,10 @@ const projectsData = [
   {
     id: 3,
     title: "Book Store",
-    description: "CRUD Book Store using CodeIgniter4 framework and Bootstrap (live preview not available)",
+    description: "CRUD Book Store using MERN(MongoDB, Express, React, Node)",
     image: "/images/projects/3.png",
-    gitUrl: "https://github.com/MHALtd/CRUD-toko-buku.git",
-    previewUrl: "/",
+    gitUrl: "https://github.com/MHALtd/MERN-Books-Store.git",
+    previewUrl: "https://mern-books-store-client.vercel.app/",
   },
   {
     id: 4,
