@@ -43,6 +43,14 @@ const projectsData = [
     gitUrl: "https://github.com/MHALtd/wedding-org-bootstrap.git",
     previewUrl: "https://arjunaasmaralaya.netlify.app/",
   },
+  {
+    id: 6,
+    title: "Wedding Invitation Page",
+    description: "Wedding Invitaion Website using Bootstrap",
+    image: "/images/projects/6.png",
+    gitUrl: "https://github.com/MHALtd/wedding-invitation.git",
+    previewUrl: "https://aa-wedding-inv.netlify.app/",
+  },
 ];
 
 const ProjectsSection = () => {
