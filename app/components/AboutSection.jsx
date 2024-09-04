@@ -27,8 +27,8 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc space-y-2 pl-2">
         <li>
-          Informatics | Bhayangkara Jakarta Raya University <br />{" "}
-          <span className="italic font-light">Sep 2020 - Present</span>
+          Informatics | Bhayangkara Jakarta Raya University | GPA : 3.64 <br />{" "}
+          <span className="italic font-light">Aug 2020 - Aug 2024</span>
         </li>
         <li>
           Cloud Computing | Bangkit Academy H2 2023 By Google, GoTo, Traveloka <br />{" "}
@@ -79,7 +79,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-base md:text-justify md:text-lg">
-            I am a Frontend Developer with a passion for creating interactive and responsive web applications. Ihave
+            I am a Frontend and Web Developer with a passion for creating interactive and responsive web applications. Ihave
             experience working with JavaScript, React.js, Node.js, HTML, CSS and Git. I am a creative and perfectionist
             person. Also I am always looking to expand my knowledge and skill set. I am excited to work with others to
             amazing applications.
